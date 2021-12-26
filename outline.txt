@@ -1,0 +1,29 @@
+Book Outline
+
+front cover
+table of contents (clickable in e-book)
+introduction & overview
+
+for each item:
+	name
+	description
+	how to diagnose if biting you
+	tradeoffs
+	how to fix
+	diagrams & illustrations
+	links to online animations or videos?
+	links to online interactive REPLs or sims?
+	example case(s) (1+): before vs after (with code, spec and diagram diffs)
+
+tools
+
+hardware-specific, OS-specific, or language-specific tools, controls and concerns
+	TODO how to categorize/organize from top-level
+
+recommendations for further reading & exercise
+
+bibliography
+cheatsheet as a standalone
+index
+about author
+back cover
