@@ -4,9 +4,18 @@ This is the source repo for an attempt of mine to write a book on the topic of s
 
 Working title at moment (which could easily change before launch): On Software Performance & Scalability. (OSPS)
 
-I'll start with the cheatsheet I already wrote on this topic area, Software Performance & Scalability, as a seed. We'll include it here and likely make it a sub-artifact of the larger book project. Ideally every item/entry in my cheatsheet should be covered in this book (or adjusted, or dropped, where makes sense.) Though the cheatsheet accomplishes what I intended it has some obvious failings or "breadcrumbs" suggestive of more material. Namely... when would each of the items apply? How do you know a particular issue is biting you? What are the trade-offs, if any? Example cases with before-vs-after. Measuring tools. Hardware-specific, OS-specific, or language-specific tools, controls and concerns. Diagrams and illustrations. Linked animations or videos? Linked interactive REPLs? Bibliography. Recommendations for further reading. Index. A cool cover. (<-- probably the most important thing.) We'll start by assuming this project will be an ebook, by default, but as a bonus should also look good and "work well" as a printed book.
+I'll start with the cheatsheet I already wrote on this topic area, Software Performance & Scalability, as a seed. I'll include it here and likely make it a sub-artifact of the larger book project. Ideally every item/entry in my cheatsheet should be covered in this book (or adjusted, or dropped, where makes sense.) Though the cheatsheet accomplishes what I intended it has some obvious failings or "breadcrumbs" suggestive of more material. Namely... when would each of the items apply? How do you know a particular issue is biting you? What are the trade-offs, if any? Example cases with before-vs-after. Measuring tools. Hardware-specific, OS-specific, or language-specific tools, controls and concerns. Diagrams and illustrations. Linked animations or videos? Linked interactive REPLs? Bibliography. Recommendations for further reading. Index. A cool cover. (<-- probably the most important thing.) We'll start by assuming this project will be an ebook, by default, but as a bonus should also look good and "work well" as a printed book.
 
 I'll try to develop this book "in the open" as much as I can. Meaning the public can see the series of commits as I evolve the book (only in my free time, usually evenings and weekends) and iterate towards my final goal. Even see me evolve the goals and strategy as I go.
+
+On a somewhat related note I'd like to experiment with doing "live coding" more or otherwise recording videos of myself doing coding sessions. This book would work best if it included source code samples to illustrate before-vs-after cases, and so I might develop some using that technique. Brainstorming: record video of a troubleshooting and fixing session?
+
+This topic area is mostly hardware agnostic and generic, but we'll bias to modern x86 and ARM.
+Likewise for operating systems, but we'll bias to Linux and Mac.
+Might include code examples in only one language, or a few (undecided), but the language(s) chosen will likely be drawn from: Go, Rust, Python, Java and C.
+We might include parts dealing with cloud IaaS/SaaS-specific issues. If so we'll bias to Amazon Web Services (AWS), then Google (GCP).
+
+And I *might* include some creative/fictional text, scattered throughout the serious technical content, both for purposes of fun (for me, and hopefully for reader) and spice.
 
 thanks
 

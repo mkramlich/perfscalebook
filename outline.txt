@@ -17,7 +17,7 @@ for each item:
 
 tools
 
-hardware-specific, OS-specific, or language-specific tools, controls and concerns
+hardware-specific, OS-specific, language-specific, or cloud-specific tools, controls and concerns
 	TODO how to categorize/organize from top-level
 
 recommendations for further reading & exercise
