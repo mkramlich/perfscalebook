@@ -2,7 +2,6 @@ TODO
 ----
 
 items.py:
-    auto-count (assign number for each)
     use item codes/abbrevs to refer to other items
 
 special to generic relations:
