@@ -1,0 +1,9 @@
+syntax on
+set tabstop=4
+set softtabstop=4
+set expandtab
+"set cursorline
+set showmatch
+"set number
+set ruler
+set laststatus=2
