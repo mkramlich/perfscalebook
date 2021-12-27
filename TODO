@@ -9,6 +9,8 @@ script to generate all artifacts (like book epub/mobi, and cheatsheet pdf)
 
 structured "book source" text format. eg. Markdown. or ad hoc via Python?
 
+add to "per item" in outline: how item relates to other items (eg. memoization is a special case of more general case of caching; and a well-cached dynamic app site becomes increasingly a more de facto static site); maybe use an optional item code/abbrev for the ref wiring
+
 ------------
 
 New Item Candidates
@@ -24,3 +26,41 @@ assembly. inline ASM (like in C)
 add some cloud, NN, ML and "data science" specific items to candidate list, where distinction warrants
 
 TODO some in my notes on phone?
+
+speculative branch prediction (similar to 17 Precompute Predicted Requests)
+
+probable bets (needs work; flesh out or drop this)
+
+Bayesian inference
+
+multi-modem or multi-ISP or multi-NIC or multi-route requests or downloading (blast multiple redundant requests in parallel down different pipes and see which one wins; or divide a requested large file into smaller pieces and fetch each in parallel from a separate path then reassemble on client's end once have all)
+
+dedicated physical network routes (ie. what Google and Amazon likely do between their data centers)
+
+mass coordination by clients/users to self-distribute target addresses and request times in a balance way (redund?)
+
+JIT bytecode optimizations
+
+in GUI, not rerender to pixels any faster than the display refresh cycle
+
+in 3D UIs, view-model culling
+
+image compression (to reduce bandwidth, boost throughput, reduce disk space footprint). add audio and video (similar to 34 Compression of Large Transfer Payloads; related to 102)
+
+at runtime drop value checking guards (think asserts and null guards) to boost speed, if wont cause problems, or tradeoff on elavated error rate is acceptable
+
+disable GC (I believe already have "tune GC" in my list)
+
+log output reducing (eg. via quieter levels) or total disabling/muting
+
+log writes to faster write-turnaround target (even if ephemeral like memory)
+
+no alloc function calls (so caller can reuse pre-allocated memory slabs, to reduce latency and better control lifecycle of memory objects) (maybe redund/overlap with existing "object pools" item)
+
+ensure no memory gets paged out to disk (via OS-wide disabling, or, by having the app workoad be very careful?) {related to 42 Tuning OS Params)
+
+faked not real (eg. mocked-up screen flows in a demo, not working code yet)
+
+that neat technique Carmack once tweeted about? (IIRC)
+
+smaller IC chips (very speculative and may drop this; TBD cuz on one hand I see why latencies within-chip could be faster however may also be other physics/materials effects at that tiny scale which disrupt or push back in opposite direction)

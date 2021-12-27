@@ -11,11 +11,20 @@ for each item:
 	tradeoffs
 	how to fix
 	diagrams & illustrations
+	related items (eg. memoization is a special case of the more general: caching)
 	links to online animations or videos?
 	links to online interactive REPLs or sims?
 	example case(s) (1+): before vs after (with code, spec and diagram diffs)
 
-tools
+tools, measuring and instrumenting
+	Linux: time (also Mac)
+	Mac
+	Go: benchmark tests, pprof
+	Rust
+	Python
+	Java
+
+tools, plotting
 
 hardware-specific, OS-specific, language-specific, or cloud-specific tools, controls and concerns
 	TODO how to categorize/organize from top-level
