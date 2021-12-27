@@ -107,3 +107,55 @@
 107. Humans For Tasks Where Cheaper, Faster, Most Accurate, Most Believable, Multi-Purpose
 108. Quantum Computing (in theory; for certain problem types)
 109. Make Light Speed in Vacuum Your Only Remaining Latency Bottleneck Where Possible
+
+
+elastic microservices arch for greater scalability, resiliency
+
+uniform distribution of tasks across a regular time window where possible (eg. say you have 100 servers which must be rebooted one per day (and a server reboot takes typically max of 2 minutes), you don’t reboot them all at the same moment, but spread them out evenly so never more than 1 server rebooting at any point during any 24 hour window) NOTE this is very close to existing #94 and 93
+
+random jigging/jittering of attempt tries to avoid stampedes
+
+assembly. inline ASM (like in C)
+
+add some cloud, NN, ML and "data science" specific items to candidate list, where distinction warrants
+
+TODO some in my notes on phone?
+
+speculative branch prediction (similar to 17 Precompute Predicted Requests)
+
+probable bets (needs work; flesh out or drop this)
+
+Bayesian inference
+
+multi-modem or multi-ISP or multi-NIC or multi-route requests or downloading (blast multiple redundant requests in parallel down different pipes and see which one wins; or divide a requested large file into smaller pieces and fetch each in parallel from a separate path then reassemble on client's end once have all)
+
+dedicated physical network routes (ie. what Google and Amazon likely do between their data centers)
+
+mass coordination by clients/users to self-distribute target addresses and request times in a balance way (redund?)
+
+JIT bytecode optimizations
+
+in GUI, not rerender to pixels any faster than the display refresh cycle
+
+in 3D UIs, view-model culling
+
+image compression (to reduce bandwidth, boost throughput, reduce disk space footprint). add audio and video (similar to 34 Compression of Large Transfer Payloads; related to 102)
+
+at runtime drop value checking guards (think asserts and null guards) to boost speed, if wont cause problems, or tradeoff on elavated error rate is acceptable
+
+disable GC (I believe already have "tune GC" in my list)
+
+log output reducing (eg. via quieter levels) or total disabling/muting
+
+log writes to faster write-turnaround target (even if ephemeral like memory)
+
+no alloc function calls (so caller can reuse pre-allocated memory slabs, to reduce latency and better control lifecycle of memory objects) (maybe redund/overlap with existing "object pools" item)
+
+ensure no memory gets paged out to disk (via OS-wide disabling, or, by having the app workoad be very careful?) {related to 42 Tuning OS Params)
+
+faked not real (eg. mocked-up screen flows in a demo, not working code yet)
+
+that neat technique Carmack once tweeted about? (IIRC)
+
+smaller IC chips (very speculative and may drop this; TBD cuz on one hand I see why latencies within-chip could be faster however may also be other physics/materials effects at that tiny scale which disrupt or push back in opposite direction)
+
