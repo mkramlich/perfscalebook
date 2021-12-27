@@ -1,0 +1,26 @@
+TODO
+
+extract a list of item candidates from my cheatsheet (including from other TODOs and new candidates below)
+
+write a full "per item" chapter, as a candidate/template. ok if not perfect/final
+	candidates for 1st: parallelization; caching; stat-not-dyn; memoization
+
+script to generate all artifacts (like book epub/mobi, and cheatsheet pdf)
+
+structured "book source" text format. eg. Markdown. or ad hoc via Python?
+
+------------
+
+New Item Candidates
+
+elastic microservices arch for greater scalability, resiliency
+
+uniform distribution of tasks across a regular time window where possible (eg. say you have 100 servers which must be rebooted one per day (and a server reboot takes typically max of 2 minutes), you don’t reboot them all at the same moment, but spread them out evenly so never more than 1 server rebooting at any point during any 24 hour window) NOTE this is very close to existing #94 and 93
+
+random jigging/jittering of attempt tries to avoid stampedes
+
+assembly. inline ASM (like in C)
+
+add some cloud, NN, ML and "data science" specific items to candidate list, where distinction warrants
+
+TODO some in my notes on phone?
