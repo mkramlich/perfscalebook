@@ -159,3 +159,4 @@ that neat technique Carmack once tweeted about? (IIRC)
 
 smaller IC chips (very speculative and may drop this; TBD cuz on one hand I see why latencies within-chip could be faster however may also be other physics/materials effects at that tiny scale which disrupt or push back in opposite direction)
 
+more on 1 chip (instead of external GPU or NN compute; eg. SoC, Apple's M1) (can't believe it took me 3+ years to add this)

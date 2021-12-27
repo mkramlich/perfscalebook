@@ -5,8 +5,10 @@ table of contents (clickable in e-book)
 introduction & overview
 
 for each item:
-	name
+	name (concise but memorable, cuz need something; try to use standard term if exists else coin my own?)
+	number (ordinal, within book/cheatsheet, as a ref convenience)
 	description
+	when it can apply vs not
 	how to diagnose if biting you
 	tradeoffs
 	how to fix
@@ -25,6 +27,8 @@ tools, measuring and instrumenting
 	Java
 
 tools, plotting
+
+tools, monitoring (may overlap with measuring/instrumenting and plotting tools)
 
 hardware-specific, OS-specific, language-specific, or cloud-specific tools, controls and concerns
 	TODO how to categorize/organize from top-level
