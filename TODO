@@ -1,6 +1,8 @@
 TODO
 
-items file in a structured format like Python
+tabs to spaces: oops
+
+items.py:
 	auto-count (assign number for each)
 	use item codes/abbrevs to refer to other items
 
