@@ -1,6 +1,6 @@
 
 Software Performance & Scalability: A Cheatsheet List
-KEY: [entry alias]  [w:a means this is way of achieving a] [s:a means this is special case of a]
+KEY: [entry alias]  [w:a means this is way of achieving 'a'] [s:a means this is special case of 'a']
   1. (  1)                 Do Nothing (why? math-wise is perfect: min possible latency, cpu, mem & infinite
   2. (  2)                 Do Very Little (why? broadstrokes is the next most perfect & efficient thing aft
   3. (  3) [s]             Static Not Dynamic

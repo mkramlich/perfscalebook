@@ -5,16 +5,23 @@ items.py:
     finish specifying all the w and s relations
     elim the quick and dirty .80s wrap hack
     retire the old numbers (the (id)'s)
+    consider just printing the alias/relations as a stripped one-line dict
+    consider switching trait keys to single letters (easier typing, worse grepping)
+    add a domain trait. eg. web, graphics, video, audio, memory, disk/storage, database, hardware, cloud, network, OS, space/aero, embedded/IoT...
+    traits for tradeoffs or optimization goals? (eg. more cpu, less disk; more cpu, less bandwidth; less latency, more redundancy; etc.)
+    traits for tools which are helpful/relevant to each item?
+    cleanup/simplify names of the new items (post 109)
+    separate names from the side comments (like I did in legacy #1 Do Nothing)
 
 special to generic relations:
-    memoization to caching
-    well-cached dynamic app site becomes increasingly a more de facto static site)
+    distributed to parallelization (and kinda former way-to-achieve the latter)
     many items will be special cases of "do little as possible"; "do nothing" is most extreme version of it
 
 write a full "per item" chapter, as a candidate/template. ok if not perfect/final
     candidates for 1st:
         parallelization; caching; stat-not-dyn; memoization
         langs: Python and Go
+    item-specific subdirs?
 
 script to generate all artifacts (like book epub/mobi, and cheatsheet pdf) (pandoc?)
 
@@ -35,4 +42,6 @@ New Item Candidates
 to maximize hash rates for cryptocurrency/blockchain mining: ASIC > GPU > CPU (may be redundant to existing)
 
 shorter wires/fibers (distances between components in compute system) (needs thought. feels redundant with existing)
+
+is "horizontal scaling" worth its own item? since one of the very biggest shotguns (along with caching/static). somewhat overlap with distributed, and is one reason for distributed (along with parallel) but not only reason 
 

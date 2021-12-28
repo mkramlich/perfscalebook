@@ -140,7 +140,7 @@ items = [
 
 if __name__ == "__main__":
     print("\nSoftware Performance & Scalability: A Cheatsheet List")
-    print("KEY: [entry alias]  [w:a means this is way of achieving a] [s:a means this is special case of a]")
+    print("KEY: [entry alias]  [w:a means this is way of achieving 'a'] [s:a means this is special case of 'a']")
     for i, item in enumerate(items):
         alias          = ""
         wayofachieving = ""
