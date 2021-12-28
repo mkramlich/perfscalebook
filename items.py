@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
 items = [
-    (1, "Do Nothing (why? math-wise is perfect: min possible latency, cpu, mem & infinitely scalable)"),
-    (2, "Do Very Little (why? broadstrokes is the next most perfect & efficient thing after Do Nothing)"),
-    (3, "Static Not Dynamic"),
-    (4, "Cached"),
-    (5, "Distributed"),
-    (6, "Parallelized"),
-    (7, "Asynchronous"),
-    (8, "Incremental"),
-    (9, "Step Minimization"),
+    (1,  "Do Nothing (why? math-wise is perfect: min possible latency, cpu, mem & infinitely scalable)"),
+    (2,  "Do Very Little (why? broadstrokes is the next most perfect & efficient thing after Do Nothing)"),
+    (3,  "Static Not Dynamic",{"alias":"s"}),
+    (4,  "Cached",            {"alias":"c","way-of-achieving":("s",)}),
+    (5,  "Distributed"),
+    (6,  "Parallelized"),
+    (7,  "Asynchronous"),
+    (8,  "Incremental"),
+    (9,  "Step Minimization"),
     (10, "Paginated Results"),
     (11, "Complexity (in Time or Space) Cost Optimal Algorithms (eg. O(1) over O(n) over O(n^2))"),
     (12, "Event-Driven not Polled"),
@@ -51,7 +51,7 @@ items = [
     (48, "Client-Server Architecture (eg. benefit: long startup init tasks done in server not clients)"),
     (49, "Push Work To Client-Side Rather Than Server-Side (eg. rendering, initial input validation)"),
     (50, "Local Function Calls Rather Than RPC or Web Service Requests"),
-    (51, "Function Memoization"),
+    (51, "Function Memoization",{"special-case-of":"c"}),
     (52, "Function Inlining"),
     (53, "Loop Unrolling"),
     (54, "Less Unnecessary Call Descent Depth (eg. Java/Enterprise Design Pattern Astronaut Arch)"),
@@ -140,7 +140,20 @@ items = [
 
 if __name__ == "__main__":
     print("\nSoftware Performance & Scalability: A Cheatsheet List")
+    print("KEY: [entry alias]  [w:a means this is way of achieving a] [s:a means this is special case of a]")
     for i, item in enumerate(items):
-        orig_i, text = item
-        print("%3i. (%3i) %s" % (i+1, orig_i, text))
+        alias          = ""
+        wayofachieving = ""
+        specialcaseof  = ""
+        if len(item) == 2:
+            orig_i, text = item
+        else:
+            orig_i, text, traits = item
+            if "alias" in traits:
+                alias           = "[%s]" % traits["alias"]
+            if "way-of-achieving" in traits:
+                wayofachieving = "[w:%s]" % traits["way-of-achieving"]
+            if "special-case-of" in traits:
+                specialcaseof = "[s:%s]" % traits["special-case-of"]
+        print("%3i. (%3i) %3s %5s %5s %.80s" % (i+1, orig_i, alias, wayofachieving, specialcaseof, text))
     print("")

@@ -1,0 +1,139 @@
+
+Software Performance & Scalability: A Cheatsheet List
+KEY: [entry alias]  [w:a means this is way of achieving a] [s:a means this is special case of a]
+  1. (  1)                 Do Nothing (why? math-wise is perfect: min possible latency, cpu, mem & infinite
+  2. (  2)                 Do Very Little (why? broadstrokes is the next most perfect & efficient thing aft
+  3. (  3) [s]             Static Not Dynamic
+  4. (  4) [c] [w:s]       Cached
+  5. (  5)                 Distributed
+  6. (  6)                 Parallelized
+  7. (  7)                 Asynchronous
+  8. (  8)                 Incremental
+  9. (  9)                 Step Minimization
+ 10. ( 10)                 Paginated Results
+ 11. ( 11)                 Complexity (in Time or Space) Cost Optimal Algorithms (eg. O(1) over O(n) over O
+ 12. ( 12)                 Event-Driven not Polled
+ 13. ( 13)                 Non-Blocking IO
+ 14. ( 14)                 Web Page Component Request Minimization
+ 15. ( 15)                 Network Locality (eg. CDN’s)
+ 16. ( 16)                 Machine Task-to-Data Locality (eg. Hadoop)
+ 17. ( 17)                 Precompute Predicted Requests
+ 18. ( 18)                 Eager Init vs Lazy Init
+ 19. ( 19)                 Higher CPU Clock Speed
+ 20. ( 20)                 Higher CPU Core Count
+ 21. ( 21)                 CPU Instructions Which Do More Work Per Cycle/Tock (eg. SIMD)
+ 22. ( 22)                 Higher Communication Bus Speed, Throughput
+ 23. ( 23)                 Do Tasks in Hardware Rather than Software
+ 24. ( 24)                 Leaner Languages & Runtimes
+ 25. ( 25)                 More Memory
+ 26. ( 26)                 Faster Memory
+ 27. ( 27)                 More Disk/Storage
+ 28. ( 28)                 Faster Disk/Storage (Seek, Read, Write)
+ 29. ( 29)                 Disk/Storage Defragmentation
+ 30. ( 30)                 SSD not HDD (for random access latency)
+ 31. ( 31)                 Local Disk/Storage Rather Than Network Mounted
+ 32. ( 32)                 Higher Network Bandwidth
+ 33. ( 33)                 Wired not Wireless
+ 34. ( 34)                 Compression of Large Transfer Payloads
+ 35. ( 35)                 Persistent Connections
+ 36. ( 36)                 Connection Pools
+ 37. ( 37)                 UDP not TCP
+ 38. ( 38)                 Minimize Chattiness of Comm Protocols
+ 39. ( 39)                 Pass Smaller Messages
+ 40. ( 40)                 Make Use of Otherwise Unused Local GPU For General/Parallel Compute Tasks
+ 41. ( 41)                 Make Use of Cloud Computing Services (eg. AWS)
+ 42. ( 42)                 Tuning OS Parameters
+ 43. ( 43)                 Custom OS Kernel Builds
+ 44. ( 44)                 Non-Virtual OS Instance
+ 45. ( 45)                 RTOS (if require a guarantee & hard upper bound on latency of action in response
+ 46. ( 46)                 No OS (yes extreme but consider case of micro-controller where only 1 master pro
+ 47. ( 47)                 Pass and Store Diffs Rather Than Complete Snapshots
+ 48. ( 48)                 Client-Server Architecture (eg. benefit: long startup init tasks done in server 
+ 49. ( 49)                 Push Work To Client-Side Rather Than Server-Side (eg. rendering, initial input v
+ 50. ( 50)                 Local Function Calls Rather Than RPC or Web Service Requests
+ 51. ( 51)           [s:c] Function Memoization
+ 52. ( 52)                 Function Inlining
+ 53. ( 53)                 Loop Unrolling
+ 54. ( 54)                 Less Unnecessary Call Descent Depth (eg. Java/Enterprise Design Pattern Astronau
+ 55. ( 55)                 Less Memory Churn and Background GC Inside Your Process
+ 56. ( 56)                 Object Pooling
+ 57. ( 57)                 Clusters
+ 58. ( 58)                 Queues with Worker Process/Thread Pools
+ 59. ( 59)                 Database Indexing
+ 60. ( 60)                 Database Stored Procedures
+ 61. ( 61)                 Database Prepared Statements
+ 62. ( 62)                 Database Sharding
+ 63. ( 63)                 Old Data Warehousing/Archiving
+ 64. ( 64)                 Old Metric/Event Rollups
+ 65. ( 65)                 Log Archiving
+ 66. ( 66)                 Timeout Guards
+ 67. ( 67)                 Buffer Size Tuning
+ 68. ( 68)                 Queue Size Tuning
+ 69. ( 69)                 Timeout Duration Tuning
+ 70. ( 70)                 Network Packet Size Tuning
+ 71. ( 71)                 Disk Page Size Tuning
+ 72. ( 72)                 Memory Page Size Tuning
+ 73. ( 73)                 Cache Size Tuning
+ 74. ( 74)                 Cache Eviction/Expiration Policy Tuning
+ 75. ( 75)                 Page Boundary Alignment Optimization
+ 76. ( 76)                 Powers of Two (other powers less efficient for memory addresses & sizes, with mo
+ 77. ( 77)                 Bit Packing (making every bit yield the maximum signal/use for the buck)
+ 78. ( 78)                 Run Bottleneck Processes with Max Priority, Minimum Niceness
+ 79. ( 79)                 Avoid Need To Mitigate Risk Of Hardware Failures Due To Vibration/Shock
+ 80. ( 80)                 Avoid Need To Mitigate Impact Of Environmental Radiation (eg. cosmic x-rays)
+ 81. ( 81)                 Reduce Physical Volume (eg. consider design impact on smartphones and data cente
+ 82. ( 82)                 Reduce Physical Mass (eg. consider compute capabilities & cost impact on space p
+ 83. ( 83)                 Reduce Power Consumption (eg. smartphones, laptop battery life, data centers)
+ 84. ( 84)                 Reduce Heat Emission (eg. impacts cooling reqs thus total cost/complexity of dat
+ 85. ( 85)                 Keep Hardware Cool, Especially Processors
+ 86. ( 86)                 Increase MTBF of Least Reliable Hardware Component
+ 87. ( 87)                 Commodity Priced Hardware Rather Than Vendor Monopoly/Patented/Unique Hardware
+ 88. ( 88)                 Later/Recent Generation Hardware Models (in general: more optimized than earlier
+ 89. ( 89)                 Decrease Max/Mean/Min Time Before Detection of Failure
+ 90. ( 90)                 Upstream DoS Throttling/Filtering
+ 91. ( 91)                 User Request Throttling
+ 92. ( 92)                 Automatic Load Balancing (esp smarter)
+ 93. ( 93)                 Off-Peak Scheduling of Tasks When Possible
+ 94. ( 94)                 Encourage/Require Users To Spread Access/Requests/Workloads More Evenly Over Tim
+ 95. ( 95)                 No Encryption
+ 96. ( 96)                 Minimize Core/Thread Context Switching
+ 97. ( 97)                 Avoid Mem/Disk Paging/Swapping, Especially Thrashing
+ 98. ( 98)                 Higher OS Scheduling Priority For Processes Directly Responding To Live User Com
+ 99. ( 99)                 Avoid Lock Contention
+100. (100)                 Textual UI’s and CLI’s Rather Than GUI’s
+101. (101)                 Text Rather Than Images and Static Images Rather Than Video, Audio or Animations
+102. (102)                 Vector Illus/Anims/UI’s Rather Than Bitmaps To Minimize Disk/Net/Mem Footprint
+103. (103)                 JSON/CSV/etc Rather Than XML (whose impls often cause higher latency or mem use)
+104. (104)                 Prefer Precise, Reactive, Resource Sipping Tools (eg. lat/cpu/mem of vim over Ec
+105. (105)                 Automated Rather Than Manual (eg. no content staff approval queue, just filter a
+106. (106)                 Mass Viral Parasitic Disguised Idle Compute (eg. malware)
+107. (107)                 Humans For Tasks Where Cheaper, Faster, Most Accurate, Most Believable, Multi-Pu
+108. (108)                 Quantum Computing (in theory; for certain problem types)
+109. (109)                 Make Light Speed in Vacuum Your Only Remaining Latency Bottleneck Where Possible
+110. (  0)                 elastic microservices arch for greater scalability, resiliency
+111. (  0)                 uniform distribution of tasks across a regular time window where possible (eg. s
+112. (  0)                 random jigging/jittering of attempt tries to avoid stampedes
+113. (  0)                 assembly. inline ASM (like in C)
+114. (  0)                 add some cloud, NN, ML and 'data science' specific items to candidate list, wher
+115. (  0)                 TODO some in my notes on phone?
+116. (  0)                 speculative branch prediction (similar to 17 Precompute Predicted Requests)
+117. (  0)                 probable bets (needs work; flesh out or drop this)
+118. (  0)                 Bayesian inference
+119. (  0)                 multi-modem or multi-ISP or multi-NIC or multi-route requests or downloading (bl
+120. (  0)                 dedicated physical network routes (ie. what Google and Amazon likely do between 
+121. (  0)                 mass coordination by clients/users to self-distribute target addresses and reque
+122. (  0)                 JIT bytecode optimizations
+123. (  0)                 in GUI, not rerender to pixels any faster than the display refresh cycle
+124. (  0)                 in 3D UIs, view-model culling
+125. (  0)                 image compression (to reduce bandwidth, boost throughput, reduce disk space foot
+126. (  0)                 at runtime drop value checking guards (think asserts and null guards) to boost s
+127. (  0)                 disable GC (I believe already have 'tune GC' in my list)
+128. (  0)                 log output reducing (eg. via quieter levels) or total disabling/muting
+129. (  0)                 log writes to faster write-turnaround target (even if ephemeral like memory)
+130. (  0)                 no alloc function calls (so caller can reuse pre-allocated memory slabs, to redu
+131. (  0)                 ensure no memory gets paged out to disk (via OS-wide disabling, or, by having th
+132. (  0)                 faked not real (eg. mocked-up screen flows in a demo, not working code yet)
+133. (  0)                 that neat technique Carmack once tweeted about? (IIRC)
+134. (  0)                 smaller IC chips (very speculative and may drop this; TBD cuz on one hand I see 
+135. (  0)                 more on 1 chip (instead of external GPU or NN compute; eg. SoC, Apple's M1) (can
+

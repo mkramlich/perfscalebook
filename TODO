@@ -2,18 +2,23 @@ TODO
 ----
 
 items.py:
-    use item codes/abbrevs to refer to other items
+    finish specifying all the w and s relations
+    elim the quick and dirty .80s wrap hack
+    retire the old numbers (the (id)'s)
 
 special to generic relations:
     memoization to caching
     well-cached dynamic app site becomes increasingly a more de facto static site)
+    many items will be special cases of "do little as possible"; "do nothing" is most extreme version of it
 
 write a full "per item" chapter, as a candidate/template. ok if not perfect/final
-    candidates for 1st: parallelization; caching; stat-not-dyn; memoization
+    candidates for 1st:
+        parallelization; caching; stat-not-dyn; memoization
+        langs: Python and Go
 
-script to generate all artifacts (like book epub/mobi, and cheatsheet pdf)
+script to generate all artifacts (like book epub/mobi, and cheatsheet pdf) (pandoc?)
 
-structured "book source" text format. eg. Markdown. or ad hoc via Python? pandoc?
+structured "book source" text format. eg. Markdown. or ad hoc via Python?
 
 blurbs on general theory and practice?
     bottlenecks
@@ -28,4 +33,6 @@ blurbs on general theory and practice?
 New Item Candidates
 
 to maximize hash rates for cryptocurrency/blockchain mining: ASIC > GPU > CPU (may be redundant to existing)
+
+shorter wires/fibers (distances between components in compute system) (needs thought. feels redundant with existing)
 

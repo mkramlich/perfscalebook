@@ -18,7 +18,7 @@ We might include parts dealing with cloud IaaS/SaaS-specific issues. If so we'll
 And I *might* include some creative/fictional text, scattered throughout the serious technical content, both for purposes of fun (for me, and hopefully for reader) and spice.
 
 To print a simple list of cheatsheet items:
-	./items.py
+	./items.py # its output is cached in items.txt
 
 thanks
 
