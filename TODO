@@ -15,7 +15,17 @@ script to generate all artifacts (like book epub/mobi, and cheatsheet pdf)
 
 structured "book source" text format. eg. Markdown. or ad hoc via Python? pandoc?
 
+blurbs on general theory and practice?
+    bottlenecks
+    distributions and percentiles
+    measurement precision
+    noise
+    cold vs warm
+    queue system models (like Gunther)
+
 ----
 
 New Item Candidates
+
+to maximize hash rates for cryptocurrency/blockchain mining: ASIC > GPU > CPU (may be redundant to existing)
 
