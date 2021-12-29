@@ -1,6 +1,8 @@
 TODO
 ----
 
+add license (restrictive), and copyright boilerplate
+
 items.py:
     finish specifying all the w and s relations
     elim the quick and dirty .80s wrap hack
@@ -23,7 +25,23 @@ write a full "per item" chapter, as a candidate/template. ok if not perfect/fina
         langs: Python and Go
     item-specific subdirs?
 
-script to generate all artifacts (like book epub/mobi, and cheatsheet pdf) (pandoc?)
+script to generate all artifacts (like book epub/mobi, and cheatsheet pdf):
+    generate input.txt from some Python
+        change its format?
+    author
+    front cover image
+    clickable TOC
+    one example item-focused "chapter", placeholder content
+        embed a diagram image
+        embed a code example. monospaced and ideally syntax colored
+    page breaks
+    clickable URLs (like out to my github repo for this project)
+    index
+
+pandoc feedback (to not forget):
+    [WARNING] This document format requires a nonempty <title> element.
+    Defaulting to 'input' as the title.
+    To specify a title, use 'title' in metadata or --metadata title="...".
 
 structured "book source" text format. eg. Markdown. or ad hoc via Python?
 
